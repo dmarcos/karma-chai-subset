@@ -20,7 +20,7 @@ var pattern = function(file) {
 //   
 
 browserify({
-  entries: "./adapter.js"
+  entries: path.join(__dirname, "./adapter.js")
 })
 .bundle()
 .pipe(fs.createWriteStream('./chaiDapter.js'))
