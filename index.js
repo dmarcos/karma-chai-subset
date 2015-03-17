@@ -11,19 +11,7 @@ var endsWith = function(substr) {
 };
 
 var framework = function(files) {
-  files.push(pattern(path.resolve(require('chai-subset'))));
-  // var sinonPath = path.resolve(require.resolve('chai-subset'), '../../pkg/sinon.js');
-  // if (!_(files).map('pattern').find(endsWith(path.relative(__dirname, sinonPath)))) {
-  //   files.unshift(pattern(sinonPath));
-  // }
-
-  // var chaiPath = path.resolve(require.resolve('chai'), '../chai.js');
-  // if (!_(files).map('pattern').find(endsWith(path.relative(__dirname, chaiPath)))) {
-  //   files.unshift(pattern(chaiPath));
-  //   files.push(pattern(path.join(__dirname, 'chai-adapter.js')));
-  // }
-
-  // files.push(pattern(path.resolve(require.resolve('sinon-chai'))));
+  files.push(pattern(path.resolve(require.resolve('chai-subset'))));
 };
 
 framework.$inject = ['config.files'];
