@@ -27,4 +27,4 @@ var framework = function(files) {
 };
 
 framework.$inject = ['config.files'];
-module.exports = {'framework:sinon-chai': ['factory', framework]};
+module.exports = {'framework:chai-subset': ['factory', framework]};
