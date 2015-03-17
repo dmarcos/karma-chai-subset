@@ -1,0 +1,1 @@
+window.chaiSubset = require('chai-subset');
