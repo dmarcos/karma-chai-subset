@@ -4,7 +4,7 @@ chai.use(chaiSubset)
 },{"chai-subset":2}],2:[function(require,module,exports){
 var CircularJSON = require('circular-json');
 
-module.exports = function(chai) {
+module.exports = function() {
 	chai.Assertion.addChainableMethod('containSubset', function (expected) {
 		var actual = this.__flags.object;
 		var msg = "\n" + CircularJSON.stringify(actual, null, "\t") + "\n";
