@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai-subset": "^0.3.0"
+    "chai-subset": "^1.1.0"
   }
 }
